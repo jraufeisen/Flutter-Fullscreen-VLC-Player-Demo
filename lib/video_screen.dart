@@ -37,7 +37,9 @@ class _VideoScreenState extends State<VideoScreen>
     const videoURL =
         "https://player.vimeo.com/external/407281461.sd.mp4?s=a48fdfb3ef383217fa2c17cf6023865767839e34";
     vlcController = VlcPlayerController.network(videoURL, autoPlay: false);
-    vlcController.addOnInitListener(_stopAutoplay);
+
+    // Uncomment  if you want autoplay to stop
+    // vlcController.addOnInitListener(_stopAutoplay);
   }
 
   void setTargetNativeScale(double newValue) {
