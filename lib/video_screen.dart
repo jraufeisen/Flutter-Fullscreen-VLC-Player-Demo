@@ -32,7 +32,7 @@ class _VideoScreenState extends State<VideoScreen>
     );
 
     const videoURL =
-        "https://player.vimeo.com/external/407281461.sd.mp4?s=a48fdfb3ef383217fa2c17cf6023865767839e34";
+        "https://videos.pexels.com/video-files/3640406/3640406-uhd_2560_1440_25fps.mp4";
     vlcController = VlcPlayerController.network(videoURL, autoPlay: false);
 
     // Workaround for stopping autoplay autoplay with first frame loaded
@@ -56,7 +56,7 @@ class _VideoScreenState extends State<VideoScreen>
   }
 
   // Workaround the following bugs:
-  // https://github.com/solid-software/flutter_vlc_player/issues/335
+  // https://github.com/s12olid-software/flutter_vlc_player/issues/335
   // https://github.com/solid-software/flutter_vlc_player/issues/336
   Future<void> _stopAutoplay() async {
     await vlcController.pause();
