@@ -1,4 +1,6 @@
-# Fullscren VLC player demo
+# Fullscren VLC player demo 
+
+[![Build flutter app](https://github.com/jraufeisen/VLC-Player-in-Flutter/actions/workflows/build_flutter_app.yml/badge.svg)](https://github.com/jraufeisen/VLC-Player-in-Flutter/actions/workflows/build_flutter_app.yml)
 
 The [`flutter_vlc_player`](https://pub.dev/packages/flutter_vlc_player) package allows you to use the power of VLC player in your flutter app.
 However, the `VLCPlayer` widget behaves different from flutter's own `VideoPlayer`. 
